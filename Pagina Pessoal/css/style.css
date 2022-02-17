@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+
+.header {
+    width: 100vw;
+    height:70vh;
+    background-image: url("../img/fundo-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header .container-fundo-menu-principal {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header .container-menu-principal {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 5vw;
+    align-items: center;
+    max-width: 1366px;
+}
+
+.menu-principal {
+    display: flex;
+    flex: 1;
+    justify-content: right;
+}
+
+.menu-principal ul {
+    display:flex;
+}
+
+.container-menu-principal .logo {
+    font-family: 'Play', 'sans-serif';
+}
+
+.menu-principal .menu-item, .container-menu-principal .logo {
+    padding: 20px 20px 10px 20px;
+    transition: 0.5s;
+}
+
+.menu-principal .menu-item:hover, .container-menu-principal .logo:hover {
+    transform: scale(1.1);
+    border-bottom: 1px solid yellow;
+}
+
+.menu-principal .menu-item a, .container-menu-principal .logo {
+    text-decoration: none;
+    font-size: 16pt;
+    color: rgb(206, 206, 206);
+}
+
+.menu-principal .menu-item a:hover, .container-menu-principal .logo:hover {
+    color: rgb(255, 255, 255);
+    border-width: 100%;
+}
+
+@media (max-width: 480px) {
+
+    .header .container-menu-principal {
+        padding: 0;
+    }
+
+    .header .container-menu-principal {
+        flex-direction: column;
+    }
+
+}
