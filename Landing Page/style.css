@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Play:wght@700&display=swap');
 
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --title-grey: #101828;
+}
+
 body {
     max-width: 1440px;
     margin: 0 auto;
+    font-family: 'Inter', sans-serif;
 }
 
-.flex-container, .menu-nav, .logo, nav ul, .login-cadastro {
+.flex-container, .menu-nav, .logo, nav ul, .login-cadastro, .section-metricas {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -35,20 +42,16 @@ nav ul {
     padding-right: 10vw;
 }
 
-nav ul li a, .login-cadastro a {
-    color: #667085;
+nav ul li a, .login-cadastro a, .section-sobre-nos p {
+    color: var(--text-color);
 }
 
 .login-cadastro .botao-cadastrar {
-    background-color: #8E2424;
+    background-color: var(--main-color);
     color: #FFFFFF;
     border: none;
     border-radius: 8px;
     padding: 10px 18px;
-}
-
-.botao-cadastrar, .botao-entrar, .logo, nav ul li a  {
-    font-family: 'Inter', sans-serif;
 }
 
 .botao-entrar {
@@ -58,4 +61,96 @@ nav ul li a, .login-cadastro a {
 .login-cadastro .botao-entrar, .login-cadastro, .botao-cadastrar, nav ul li a {
     font-size: 16px;
     font-weight: 500;
+}
+
+.section-sobre-nos {
+    padding: 96px 0;
+} 
+
+.section-sobre-nos {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.section-sobre-nos span {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.section-sobre-nos h2 {
+    color: var(--title-grey);
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.section-sobre-nos p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section-sobre-nos h2, .section-sobre-nos p {
+    margin-top: 32px;
+}
+
+.section-metricas {
+    padding: 0 0 96px;
+}
+
+.section-metricas .div-metrica {
+    width: 20%;
+}
+
+.section-metricas .div-metrica h3 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+
+.section-metricas .div-metrica h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--title-grey);
+    margin-bottom: 13px;
+}
+
+.section-metricas .div-metrica p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.section-talentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-talentos h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--main-color);
+    background-color: #8E24240D;
+    padding: 4px 12px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+
+.section-talentos h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--title-grey);
+    margin-bottom: 25px;
+}
+
+.section-talentos span {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+.section-talentos img {
+    width: 100%;
 }
